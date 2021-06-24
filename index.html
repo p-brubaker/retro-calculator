@@ -1,0 +1,797 @@
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+    <body>
+        <div class="container">
+            <div id='lcdDisplay'>
+                    <div id="digit0" class="digit">
+                        <div id="digit0_column0" class="digit_column">
+                            <div id="digit0_column0_pixel0" class="pixel"></div>
+                            <div id="digit0_column0_pixel1" class="pixel"></div>
+                            <div id="digit0_column0_pixel2" class="pixel"></div>
+                            <div id="digit0_column0_pixel3" class="pixel"></div>
+                            <div id="digit0_column0_pixel4" class="pixel"></div>
+                            <div id="digit0_column0_pixel5" class="pixel"></div>
+                            <div id="digit0_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit0_column1" class="digit_column">
+                            <div id="digit0_column1_pixel0" class="pixel"></div>
+                            <div id="digit0_column1_pixel1" class="pixel"></div>
+                            <div id="digit0_column1_pixel2" class="pixel"></div>
+                            <div id="digit0_column1_pixel3" class="pixel"></div>
+                            <div id="digit0_column1_pixel4" class="pixel"></div>
+                            <div id="digit0_column1_pixel5" class="pixel"></div>
+                            <div id="digit0_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit0_column2" class="digit_column">
+                            <div id="digit0_column2_pixel0" class="pixel"></div>
+                            <div id="digit0_column2_pixel1" class="pixel"></div>
+                            <div id="digit0_column2_pixel2" class="pixel"></div>
+                            <div id="digit0_column2_pixel3" class="pixel"></div>
+                            <div id="digit0_column2_pixel4" class="pixel"></div>
+                            <div id="digit0_column2_pixel5" class="pixel"></div>
+                            <div id="digit0_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit0_column3" class="digit_column">
+                            <div id="digit0_column3_pixel0" class="pixel"></div>
+                            <div id="digit0_column3_pixel1" class="pixel"></div>
+                            <div id="digit0_column3_pixel2" class="pixel"></div>
+                            <div id="digit0_column3_pixel3" class="pixel"></div>
+                            <div id="digit0_column3_pixel4" class="pixel"></div>
+                            <div id="digit0_column3_pixel5" class="pixel"></div>
+                            <div id="digit0_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit0_column4" class="digit_column">
+                            <div id="digit0_column4_pixel0" class="pixel"></div>
+                            <div id="digit0_column4_pixel1" class="pixel"></div>
+                            <div id="digit0_column4_pixel2" class="pixel"></div>
+                            <div id="digit0_column4_pixel3" class="pixel"></div>
+                            <div id="digit0_column4_pixel4" class="pixel"></div>
+                            <div id="digit0_column4_pixel5" class="pixel"></div>
+                            <div id="digit0_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit1" class="digit">
+                        <div id="digit1_column0" class="digit_column">
+                            <div id="digit1_column0_pixel0" class="pixel"></div>
+                            <div id="digit1_column0_pixel1" class="pixel"></div>
+                            <div id="digit1_column0_pixel2" class="pixel"></div>
+                            <div id="digit1_column0_pixel3" class="pixel"></div>
+                            <div id="digit1_column0_pixel4" class="pixel"></div>
+                            <div id="digit1_column0_pixel5" class="pixel"></div>
+                            <div id="digit1_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit1_column1" class="digit_column">
+                            <div id="digit1_column1_pixel0" class="pixel"></div>
+                            <div id="digit1_column1_pixel1" class="pixel"></div>
+                            <div id="digit1_column1_pixel2" class="pixel"></div>
+                            <div id="digit1_column1_pixel3" class="pixel"></div>
+                            <div id="digit1_column1_pixel4" class="pixel"></div>
+                            <div id="digit1_column1_pixel5" class="pixel"></div>
+                            <div id="digit1_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit1_column2" class="digit_column">
+                            <div id="digit1_column2_pixel0" class="pixel"></div>
+                            <div id="digit1_column2_pixel1" class="pixel"></div>
+                            <div id="digit1_column2_pixel2" class="pixel"></div>
+                            <div id="digit1_column2_pixel3" class="pixel"></div>
+                            <div id="digit1_column2_pixel4" class="pixel"></div>
+                            <div id="digit1_column2_pixel5" class="pixel"></div>
+                            <div id="digit1_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit1_column3" class="digit_column">
+                            <div id="digit1_column3_pixel0" class="pixel"></div>
+                            <div id="digit1_column3_pixel1" class="pixel"></div>
+                            <div id="digit1_column3_pixel2" class="pixel"></div>
+                            <div id="digit1_column3_pixel3" class="pixel"></div>
+                            <div id="digit1_column3_pixel4" class="pixel"></div>
+                            <div id="digit1_column3_pixel5" class="pixel"></div>
+                            <div id="digit1_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit1_column4" class="digit_column">
+                            <div id="digit1_column4_pixel0" class="pixel"></div>
+                            <div id="digit1_column4_pixel1" class="pixel"></div>
+                            <div id="digit1_column4_pixel2" class="pixel"></div>
+                            <div id="digit1_column4_pixel3" class="pixel"></div>
+                            <div id="digit1_column4_pixel4" class="pixel"></div>
+                            <div id="digit1_column4_pixel5" class="pixel"></div>
+                            <div id="digit1_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit2" class="digit">
+                        <div id="digit2_column0" class="digit_column">
+                            <div id="digit2_column0_pixel0" class="pixel"></div>
+                            <div id="digit2_column0_pixel1" class="pixel"></div>
+                            <div id="digit2_column0_pixel2" class="pixel"></div>
+                            <div id="digit2_column0_pixel3" class="pixel"></div>
+                            <div id="digit2_column0_pixel4" class="pixel"></div>
+                            <div id="digit2_column0_pixel5" class="pixel"></div>
+                            <div id="digit2_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit2_column1" class="digit_column">
+                            <div id="digit2_column1_pixel0" class="pixel"></div>
+                            <div id="digit2_column1_pixel1" class="pixel"></div>
+                            <div id="digit2_column1_pixel2" class="pixel"></div>
+                            <div id="digit2_column1_pixel3" class="pixel"></div>
+                            <div id="digit2_column1_pixel4" class="pixel"></div>
+                            <div id="digit2_column1_pixel5" class="pixel"></div>
+                            <div id="digit2_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit2_column2" class="digit_column">
+                            <div id="digit2_column2_pixel0" class="pixel"></div>
+                            <div id="digit2_column2_pixel1" class="pixel"></div>
+                            <div id="digit2_column2_pixel2" class="pixel"></div>
+                            <div id="digit2_column2_pixel3" class="pixel"></div>
+                            <div id="digit2_column2_pixel4" class="pixel"></div>
+                            <div id="digit2_column2_pixel5" class="pixel"></div>
+                            <div id="digit2_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit2_column3" class="digit_column">
+                            <div id="digit2_column3_pixel0" class="pixel"></div>
+                            <div id="digit2_column3_pixel1" class="pixel"></div>
+                            <div id="digit2_column3_pixel2" class="pixel"></div>
+                            <div id="digit2_column3_pixel3" class="pixel"></div>
+                            <div id="digit2_column3_pixel4" class="pixel"></div>
+                            <div id="digit2_column3_pixel5" class="pixel"></div>
+                            <div id="digit2_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit2_column4" class="digit_column">
+                            <div id="digit2_column4_pixel0" class="pixel"></div>
+                            <div id="digit2_column4_pixel1" class="pixel"></div>
+                            <div id="digit2_column4_pixel2" class="pixel"></div>
+                            <div id="digit2_column4_pixel3" class="pixel"></div>
+                            <div id="digit2_column4_pixel4" class="pixel"></div>
+                            <div id="digit2_column4_pixel5" class="pixel"></div>
+                            <div id="digit2_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit3" class="digit">
+                        <div id="digit3_column0" class="digit_column">
+                            <div id="digit3_column0_pixel0" class="pixel"></div>
+                            <div id="digit3_column0_pixel1" class="pixel"></div>
+                            <div id="digit3_column0_pixel2" class="pixel"></div>
+                            <div id="digit3_column0_pixel3" class="pixel"></div>
+                            <div id="digit3_column0_pixel4" class="pixel"></div>
+                            <div id="digit3_column0_pixel5" class="pixel"></div>
+                            <div id="digit3_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit3_column1" class="digit_column">
+                            <div id="digit3_column1_pixel0" class="pixel"></div>
+                            <div id="digit3_column1_pixel1" class="pixel"></div>
+                            <div id="digit3_column1_pixel2" class="pixel"></div>
+                            <div id="digit3_column1_pixel3" class="pixel"></div>
+                            <div id="digit3_column1_pixel4" class="pixel"></div>
+                            <div id="digit3_column1_pixel5" class="pixel"></div>
+                            <div id="digit3_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit3_column2" class="digit_column">
+                            <div id="digit3_column2_pixel0" class="pixel"></div>
+                            <div id="digit3_column2_pixel1" class="pixel"></div>
+                            <div id="digit3_column2_pixel2" class="pixel"></div>
+                            <div id="digit3_column2_pixel3" class="pixel"></div>
+                            <div id="digit3_column2_pixel4" class="pixel"></div>
+                            <div id="digit3_column2_pixel5" class="pixel"></div>
+                            <div id="digit3_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit3_column3" class="digit_column">
+                            <div id="digit3_column3_pixel0" class="pixel"></div>
+                            <div id="digit3_column3_pixel1" class="pixel"></div>
+                            <div id="digit3_column3_pixel2" class="pixel"></div>
+                            <div id="digit3_column3_pixel3" class="pixel"></div>
+                            <div id="digit3_column3_pixel4" class="pixel"></div>
+                            <div id="digit3_column3_pixel5" class="pixel"></div>
+                            <div id="digit3_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit3_column4" class="digit_column">
+                            <div id="digit3_column4_pixel0" class="pixel"></div>
+                            <div id="digit3_column4_pixel1" class="pixel"></div>
+                            <div id="digit3_column4_pixel2" class="pixel"></div>
+                            <div id="digit3_column4_pixel3" class="pixel"></div>
+                            <div id="digit3_column4_pixel4" class="pixel"></div>
+                            <div id="digit3_column4_pixel5" class="pixel"></div>
+                            <div id="digit3_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit4" class="digit">
+                        <div id="digit4_column0" class="digit_column">
+                            <div id="digit4_column0_pixel0" class="pixel"></div>
+                            <div id="digit4_column0_pixel1" class="pixel"></div>
+                            <div id="digit4_column0_pixel2" class="pixel"></div>
+                            <div id="digit4_column0_pixel3" class="pixel"></div>
+                            <div id="digit4_column0_pixel4" class="pixel"></div>
+                            <div id="digit4_column0_pixel5" class="pixel"></div>
+                            <div id="digit4_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit4_column1" class="digit_column">
+                            <div id="digit4_column1_pixel0" class="pixel"></div>
+                            <div id="digit4_column1_pixel1" class="pixel"></div>
+                            <div id="digit4_column1_pixel2" class="pixel"></div>
+                            <div id="digit4_column1_pixel3" class="pixel"></div>
+                            <div id="digit4_column1_pixel4" class="pixel"></div>
+                            <div id="digit4_column1_pixel5" class="pixel"></div>
+                            <div id="digit4_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit4_column2" class="digit_column">
+                            <div id="digit4_column2_pixel0" class="pixel"></div>
+                            <div id="digit4_column2_pixel1" class="pixel"></div>
+                            <div id="digit4_column2_pixel2" class="pixel"></div>
+                            <div id="digit4_column2_pixel3" class="pixel"></div>
+                            <div id="digit4_column2_pixel4" class="pixel"></div>
+                            <div id="digit4_column2_pixel5" class="pixel"></div>
+                            <div id="digit4_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit4_column3" class="digit_column">
+                            <div id="digit4_column3_pixel0" class="pixel"></div>
+                            <div id="digit4_column3_pixel1" class="pixel"></div>
+                            <div id="digit4_column3_pixel2" class="pixel"></div>
+                            <div id="digit4_column3_pixel3" class="pixel"></div>
+                            <div id="digit4_column3_pixel4" class="pixel"></div>
+                            <div id="digit4_column3_pixel5" class="pixel"></div>
+                            <div id="digit4_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit4_column4" class="digit_column">
+                            <div id="digit4_column4_pixel0" class="pixel"></div>
+                            <div id="digit4_column4_pixel1" class="pixel"></div>
+                            <div id="digit4_column4_pixel2" class="pixel"></div>
+                            <div id="digit4_column4_pixel3" class="pixel"></div>
+                            <div id="digit4_column4_pixel4" class="pixel"></div>
+                            <div id="digit4_column4_pixel5" class="pixel"></div>
+                            <div id="digit4_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit5" class="digit">
+                        <div id="digit5_column0" class="digit_column">
+                            <div id="digit5_column0_pixel0" class="pixel"></div>
+                            <div id="digit5_column0_pixel1" class="pixel"></div>
+                            <div id="digit5_column0_pixel2" class="pixel"></div>
+                            <div id="digit5_column0_pixel3" class="pixel"></div>
+                            <div id="digit5_column0_pixel4" class="pixel"></div>
+                            <div id="digit5_column0_pixel5" class="pixel"></div>
+                            <div id="digit5_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit5_column1" class="digit_column">
+                            <div id="digit5_column1_pixel0" class="pixel"></div>
+                            <div id="digit5_column1_pixel1" class="pixel"></div>
+                            <div id="digit5_column1_pixel2" class="pixel"></div>
+                            <div id="digit5_column1_pixel3" class="pixel"></div>
+                            <div id="digit5_column1_pixel4" class="pixel"></div>
+                            <div id="digit5_column1_pixel5" class="pixel"></div>
+                            <div id="digit5_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit5_column2" class="digit_column">
+                            <div id="digit5_column2_pixel0" class="pixel"></div>
+                            <div id="digit5_column2_pixel1" class="pixel"></div>
+                            <div id="digit5_column2_pixel2" class="pixel"></div>
+                            <div id="digit5_column2_pixel3" class="pixel"></div>
+                            <div id="digit5_column2_pixel4" class="pixel"></div>
+                            <div id="digit5_column2_pixel5" class="pixel"></div>
+                            <div id="digit5_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit5_column3" class="digit_column">
+                            <div id="digit5_column3_pixel0" class="pixel"></div>
+                            <div id="digit5_column3_pixel1" class="pixel"></div>
+                            <div id="digit5_column3_pixel2" class="pixel"></div>
+                            <div id="digit5_column3_pixel3" class="pixel"></div>
+                            <div id="digit5_column3_pixel4" class="pixel"></div>
+                            <div id="digit5_column3_pixel5" class="pixel"></div>
+                            <div id="digit5_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit5_column4" class="digit_column">
+                            <div id="digit5_column4_pixel0" class="pixel"></div>
+                            <div id="digit5_column4_pixel1" class="pixel"></div>
+                            <div id="digit5_column4_pixel2" class="pixel"></div>
+                            <div id="digit5_column4_pixel3" class="pixel"></div>
+                            <div id="digit5_column4_pixel4" class="pixel"></div>
+                            <div id="digit5_column4_pixel5" class="pixel"></div>
+                            <div id="digit5_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit6" class="digit">
+                        <div id="digit6_column0" class="digit_column">
+                            <div id="digit6_column0_pixel0" class="pixel"></div>
+                            <div id="digit6_column0_pixel1" class="pixel"></div>
+                            <div id="digit6_column0_pixel2" class="pixel"></div>
+                            <div id="digit6_column0_pixel3" class="pixel"></div>
+                            <div id="digit6_column0_pixel4" class="pixel"></div>
+                            <div id="digit6_column0_pixel5" class="pixel"></div>
+                            <div id="digit6_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit6_column1" class="digit_column">
+                            <div id="digit6_column1_pixel0" class="pixel"></div>
+                            <div id="digit6_column1_pixel1" class="pixel"></div>
+                            <div id="digit6_column1_pixel2" class="pixel"></div>
+                            <div id="digit6_column1_pixel3" class="pixel"></div>
+                            <div id="digit6_column1_pixel4" class="pixel"></div>
+                            <div id="digit6_column1_pixel5" class="pixel"></div>
+                            <div id="digit6_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit6_column2" class="digit_column">
+                            <div id="digit6_column2_pixel0" class="pixel"></div>
+                            <div id="digit6_column2_pixel1" class="pixel"></div>
+                            <div id="digit6_column2_pixel2" class="pixel"></div>
+                            <div id="digit6_column2_pixel3" class="pixel"></div>
+                            <div id="digit6_column2_pixel4" class="pixel"></div>
+                            <div id="digit6_column2_pixel5" class="pixel"></div>
+                            <div id="digit6_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit6_column3" class="digit_column">
+                            <div id="digit6_column3_pixel0" class="pixel"></div>
+                            <div id="digit6_column3_pixel1" class="pixel"></div>
+                            <div id="digit6_column3_pixel2" class="pixel"></div>
+                            <div id="digit6_column3_pixel3" class="pixel"></div>
+                            <div id="digit6_column3_pixel4" class="pixel"></div>
+                            <div id="digit6_column3_pixel5" class="pixel"></div>
+                            <div id="digit6_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit6_column4" class="digit_column">
+                            <div id="digit6_column4_pixel0" class="pixel"></div>
+                            <div id="digit6_column4_pixel1" class="pixel"></div>
+                            <div id="digit6_column4_pixel2" class="pixel"></div>
+                            <div id="digit6_column4_pixel3" class="pixel"></div>
+                            <div id="digit6_column4_pixel4" class="pixel"></div>
+                            <div id="digit6_column4_pixel5" class="pixel"></div>
+                            <div id="digit6_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit7" class="digit">
+                        <div id="digit7_column0" class="digit_column">
+                            <div id="digit7_column0_pixel0" class="pixel"></div>
+                            <div id="digit7_column0_pixel1" class="pixel"></div>
+                            <div id="digit7_column0_pixel2" class="pixel"></div>
+                            <div id="digit7_column0_pixel3" class="pixel"></div>
+                            <div id="digit7_column0_pixel4" class="pixel"></div>
+                            <div id="digit7_column0_pixel5" class="pixel"></div>
+                            <div id="digit7_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit7_column1" class="digit_column">
+                            <div id="digit7_column1_pixel0" class="pixel"></div>
+                            <div id="digit7_column1_pixel1" class="pixel"></div>
+                            <div id="digit7_column1_pixel2" class="pixel"></div>
+                            <div id="digit7_column1_pixel3" class="pixel"></div>
+                            <div id="digit7_column1_pixel4" class="pixel"></div>
+                            <div id="digit7_column1_pixel5" class="pixel"></div>
+                            <div id="digit7_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit7_column2" class="digit_column">
+                            <div id="digit7_column2_pixel0" class="pixel"></div>
+                            <div id="digit7_column2_pixel1" class="pixel"></div>
+                            <div id="digit7_column2_pixel2" class="pixel"></div>
+                            <div id="digit7_column2_pixel3" class="pixel"></div>
+                            <div id="digit7_column2_pixel4" class="pixel"></div>
+                            <div id="digit7_column2_pixel5" class="pixel"></div>
+                            <div id="digit7_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit7_column3" class="digit_column">
+                            <div id="digit7_column3_pixel0" class="pixel"></div>
+                            <div id="digit7_column3_pixel1" class="pixel"></div>
+                            <div id="digit7_column3_pixel2" class="pixel"></div>
+                            <div id="digit7_column3_pixel3" class="pixel"></div>
+                            <div id="digit7_column3_pixel4" class="pixel"></div>
+                            <div id="digit7_column3_pixel5" class="pixel"></div>
+                            <div id="digit7_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit7_column4" class="digit_column">
+                            <div id="digit7_column4_pixel0" class="pixel"></div>
+                            <div id="digit7_column4_pixel1" class="pixel"></div>
+                            <div id="digit7_column4_pixel2" class="pixel"></div>
+                            <div id="digit7_column4_pixel3" class="pixel"></div>
+                            <div id="digit7_column4_pixel4" class="pixel"></div>
+                            <div id="digit7_column4_pixel5" class="pixel"></div>
+                            <div id="digit7_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit8" class="digit">
+                        <div id="digit8_column0" class="digit_column">
+                            <div id="digit8_column0_pixel0" class="pixel"></div>
+                            <div id="digit8_column0_pixel1" class="pixel"></div>
+                            <div id="digit8_column0_pixel2" class="pixel"></div>
+                            <div id="digit8_column0_pixel3" class="pixel"></div>
+                            <div id="digit8_column0_pixel4" class="pixel"></div>
+                            <div id="digit8_column0_pixel5" class="pixel"></div>
+                            <div id="digit8_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit8_column1" class="digit_column">
+                            <div id="digit8_column1_pixel0" class="pixel"></div>
+                            <div id="digit8_column1_pixel1"class="pixel" ></div>
+                            <div id="digit8_column1_pixel2" class="pixel"></div>
+                            <div id="digit8_column1_pixel3" class="pixel"></div>
+                            <div id="digit8_column1_pixel4" class="pixel"></div>
+                            <div id="digit8_column1_pixel5" class="pixel"></div>
+                            <div id="digit8_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit8_column2" class="digit_column">
+                            <div id="digit8_column2_pixel0" class="pixel"></div>
+                            <div id="digit8_column2_pixel1" class="pixel"></div>
+                            <div id="digit8_column2_pixel2" class="pixel"></div>
+                            <div id="digit8_column2_pixel3" class="pixel"></div>
+                            <div id="digit8_column2_pixel4" class="pixel"></div>
+                            <div id="digit8_column2_pixel5" class="pixel"></div>
+                            <div id="digit8_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit8_column3" class="digit_column">
+                            <div id="digit8_column3_pixel0" class="pixel"></div>
+                            <div id="digit8_column3_pixel1" class="pixel"></div>
+                            <div id="digit8_column3_pixel2" class="pixel"></div>
+                            <div id="digit8_column3_pixel3" class="pixel"></div>
+                            <div id="digit8_column3_pixel4" class="pixel"></div>
+                            <div id="digit8_column3_pixel5" class="pixel"></div>
+                            <div id="digit8_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit8_column4" class="digit_column">
+                            <div id="digit8_column4_pixel0" class="pixel"></div>
+                            <div id="digit8_column4_pixel1" class="pixel"></div>
+                            <div id="digit8_column4_pixel2" class="pixel"></div>
+                            <div id="digit8_column4_pixel3" class="pixel"></div>
+                            <div id="digit8_column4_pixel4" class="pixel"></div>
+                            <div id="digit8_column4_pixel5" class="pixel"></div>
+                            <div id="digit8_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit9" class="digit">
+                        <div id="digit9_column0" class="digit_column">
+                            <div id="digit9_column0_pixel0" class="pixel"></div>
+                            <div id="digit9_column0_pixel1" class="pixel"></div>
+                            <div id="digit9_column0_pixel2" class="pixel"></div>
+                            <div id="digit9_column0_pixel3" class="pixel"></div>
+                            <div id="digit9_column0_pixel4" class="pixel"></div>
+                            <div id="digit9_column0_pixel5" class="pixel"></div>
+                            <div id="digit9_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit9_column1" class="digit_column">
+                            <div id="digit9_column1_pixel0" class="pixel"></div>
+                            <div id="digit9_column1_pixel1" class="pixel"></div>
+                            <div id="digit9_column1_pixel2" class="pixel"></div>
+                            <div id="digit9_column1_pixel3" class="pixel"></div>
+                            <div id="digit9_column1_pixel4" class="pixel"></div>
+                            <div id="digit9_column1_pixel5" class="pixel"></div>
+                            <div id="digit9_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit9_column2" class="digit_column">
+                            <div id="digit9_column2_pixel0" class="pixel"></div>
+                            <div id="digit9_column2_pixel1" class="pixel"></div>
+                            <div id="digit9_column2_pixel2" class="pixel"></div>
+                            <div id="digit9_column2_pixel3" class="pixel"></div>
+                            <div id="digit9_column2_pixel4" class="pixel"></div>
+                            <div id="digit9_column2_pixel5" class="pixel"></div>
+                            <div id="digit9_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit9_column3" class="digit_column">
+                            <div id="digit9_column3_pixel0" class="pixel"></div>
+                            <div id="digit9_column3_pixel1" class="pixel"></div>
+                            <div id="digit9_column3_pixel2" class="pixel"></div>
+                            <div id="digit9_column3_pixel3" class="pixel"></div>
+                            <div id="digit9_column3_pixel4" class="pixel"></div>
+                            <div id="digit9_column3_pixel5" class="pixel"></div>
+                            <div id="digit9_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit9_column4" class="digit_column">
+                            <div id="digit9_column4_pixel0" class="pixel"></div>
+                            <div id="digit9_column4_pixel1" class="pixel"></div>
+                            <div id="digit9_column4_pixel2" class="pixel"></div>
+                            <div id="digit9_column4_pixel3" class="pixel"></div>
+                            <div id="digit9_column4_pixel4" class="pixel"></div>
+                            <div id="digit9_column4_pixel5" class="pixel"></div>
+                            <div id="digit9_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit10" class="digit">
+                        <div id="digit10_column0" class="digit_column">
+                            <div id="digit10_column0_pixel0" class="pixel"></div>
+                            <div id="digit10_column0_pixel1" class="pixel"></div>
+                            <div id="digit10_column0_pixel2" class="pixel"></div>
+                            <div id="digit10_column0_pixel3" class="pixel"></div>
+                            <div id="digit10_column0_pixel4" class="pixel"></div>
+                            <div id="digit10_column0_pixel5" class="pixel"></div>
+                            <div id="digit10_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit10_column1" class="digit_column">
+                            <div id="digit10_column1_pixel0" class="pixel"></div>
+                            <div id="digit10_column1_pixel1" class="pixel"></div>
+                            <div id="digit10_column1_pixel2" class="pixel"></div>
+                            <div id="digit10_column1_pixel3" class="pixel"></div>
+                            <div id="digit10_column1_pixel4" class="pixel"></div>
+                            <div id="digit10_column1_pixel5" class="pixel"></div>
+                            <div id="digit10_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit10_column2" class="digit_column">
+                            <div id="digit10_column2_pixel0" class="pixel"></div>
+                            <div id="digit10_column2_pixel1" class="pixel"></div>
+                            <div id="digit10_column2_pixel2" class="pixel"></div>
+                            <div id="digit10_column2_pixel3" class="pixel"></div>
+                            <div id="digit10_column2_pixel4" class="pixel"></div>
+                            <div id="digit10_column2_pixel5" class="pixel"></div>
+                            <div id="digit10_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit10_column3" class="digit_column">
+                            <div id="digit10_column3_pixel0" class="pixel"></div>
+                            <div id="digit10_column3_pixel1" class="pixel"></div>
+                            <div id="digit10_column3_pixel2" class="pixel"></div>
+                            <div id="digit10_column3_pixel3" class="pixel"></div>
+                            <div id="digit10_column3_pixel4" class="pixel"></div>
+                            <div id="digit10_column3_pixel5" class="pixel"></div>
+                            <div id="digit10_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit10_column4" class="digit_column">
+                            <div id="digit10_column4_pixel0" class="pixel"></div>
+                            <div id="digit10_column4_pixel1" class="pixel"></div>
+                            <div id="digit10_column4_pixel2" class="pixel"></div>
+                            <div id="digit10_column4_pixel3" class="pixel"></div>
+                            <div id="digit10_column4_pixel4" class="pixel"></div>
+                            <div id="digit10_column4_pixel5" class="pixel"></div>
+                            <div id="digit10_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit11" class="digit">
+                        <div id="digit11_column0" class="digit_column">
+                            <div id="digit11_column0_pixel0" class="pixel"></div>
+                            <div id="digit11_column0_pixel1" class="pixel"></div>
+                            <div id="digit11_column0_pixel2" class="pixel"></div>
+                            <div id="digit11_column0_pixel3" class="pixel"></div>
+                            <div id="digit11_column0_pixel4" class="pixel"></div>
+                            <div id="digit11_column0_pixel5" class="pixel"></div>
+                            <div id="digit11_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit11_column1" class="digit_column">
+                            <div id="digit11_column1_pixel0" class="pixel"></div>
+                            <div id="digit11_column1_pixel1" class="pixel"></div>
+                            <div id="digit11_column1_pixel2" class="pixel"></div>
+                            <div id="digit11_column1_pixel3" class="pixel"></div>
+                            <div id="digit11_column1_pixel4" class="pixel"></div>
+                            <div id="digit11_column1_pixel5" class="pixel"></div>
+                            <div id="digit11_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit11_column2" class="digit_column">
+                            <div id="digit11_column2_pixel0" class="pixel"></div>
+                            <div id="digit11_column2_pixel1" class="pixel"></div>
+                            <div id="digit11_column2_pixel2" class="pixel"></div>
+                            <div id="digit11_column2_pixel3" class="pixel"></div>
+                            <div id="digit11_column2_pixel4" class="pixel"></div>
+                            <div id="digit11_column2_pixel5" class="pixel"></div>
+                            <div id="digit11_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit11_column3" class="digit_column">
+                            <div id="digit11_column3_pixel0" class="pixel"></div>
+                            <div id="digit11_column3_pixel1" class="pixel"></div>
+                            <div id="digit11_column3_pixel2" class="pixel"></div>
+                            <div id="digit11_column3_pixel3" class="pixel"></div>
+                            <div id="digit11_column3_pixel4" class="pixel"></div>
+                            <div id="digit11_column3_pixel5" class="pixel"></div>
+                            <div id="digit11_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit11_column4" class="digit_column">
+                            <div id="digit11_column4_pixel0" class="pixel"></div>
+                            <div id="digit11_column4_pixel1" class="pixel"></div>
+                            <div id="digit11_column4_pixel2" class="pixel"></div>
+                            <div id="digit11_column4_pixel3" class="pixel"></div>
+                            <div id="digit11_column4_pixel4" class="pixel"></div>
+                            <div id="digit11_column4_pixel5" class="pixel"></div>
+                            <div id="digit11_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit12" class="digit">
+                        <div id="digit12_column0" class="digit_column">
+                            <div id="digit12_column0_pixel0" class="pixel"></div>
+                            <div id="digit12_column0_pixel1" class="pixel"></div>
+                            <div id="digit12_column0_pixel2" class="pixel"></div>
+                            <div id="digit12_column0_pixel3" class="pixel"></div>
+                            <div id="digit12_column0_pixel4" class="pixel"></div>
+                            <div id="digit12_column0_pixel5" class="pixel"></div>
+                            <div id="digit12_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit12_column1" class="digit_column">
+                            <div id="digit12_column1_pixel0" class="pixel"></div>
+                            <div id="digit12_column1_pixel1" class="pixel"></div>
+                            <div id="digit12_column1_pixel2" class="pixel"></div>
+                            <div id="digit12_column1_pixel3" class="pixel"></div>
+                            <div id="digit12_column1_pixel4" class="pixel"></div>
+                            <div id="digit12_column1_pixel5" class="pixel"></div>
+                            <div id="digit12_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit12_column2" class="digit_column">
+                            <div id="digit12_column2_pixel0" class="pixel"></div>
+                            <div id="digit12_column2_pixel1" class="pixel"></div>
+                            <div id="digit12_column2_pixel2" class="pixel"></div>
+                            <div id="digit12_column2_pixel3" class="pixel"></div>
+                            <div id="digit12_column2_pixel4" class="pixel"></div>
+                            <div id="digit12_column2_pixel5" class="pixel"></div>
+                            <div id="digit12_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit12_column3" class="digit_column">
+                            <div id="digit12_column3_pixel0" class="pixel"></div>
+                            <div id="digit12_column3_pixel1" class="pixel"></div>
+                            <div id="digit12_column3_pixel2" class="pixel"></div>
+                            <div id="digit12_column3_pixel3" class="pixel"></div>
+                            <div id="digit12_column3_pixel4" class="pixel"></div>
+                            <div id="digit12_column3_pixel5" class="pixel"></div>
+                            <div id="digit12_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit12_column4" class="digit_column">
+                            <div id="digit12_column4_pixel0" class="pixel"></div>
+                            <div id="digit12_column4_pixel1" class="pixel"></div>
+                            <div id="digit12_column4_pixel2" class="pixel"></div>
+                            <div id="digit12_column4_pixel3" class="pixel"></div>
+                            <div id="digit12_column4_pixel4" class="pixel"></div>
+                            <div id="digit12_column4_pixel5" class="pixel"></div>
+                            <div id="digit12_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit13" class="digit">
+                        <div id="digit13_column0" class="digit_column">
+                            <div id="digit13_column0_pixel0" class="pixel"></div>
+                            <div id="digit13_column0_pixel1" class="pixel"></div>
+                            <div id="digit13_column0_pixel2" class="pixel"></div>
+                            <div id="digit13_column0_pixel3" class="pixel"></div>
+                            <div id="digit13_column0_pixel4" class="pixel"></div>
+                            <div id="digit13_column0_pixel5" class="pixel"></div>
+                            <div id="digit13_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit13_column1" class="digit_column">
+                            <div id="digit13_column1_pixel0" class="pixel"></div>
+                            <div id="digit13_column1_pixel1" class="pixel"></div>
+                            <div id="digit13_column1_pixel2" class="pixel"></div>
+                            <div id="digit13_column1_pixel3" class="pixel"></div>
+                            <div id="digit13_column1_pixel4" class="pixel"></div>
+                            <div id="digit13_column1_pixel5" class="pixel"></div>
+                            <div id="digit13_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit13_column2" class="digit_column">
+                            <div id="digit13_column2_pixel0" class="pixel"></div>
+                            <div id="digit13_column2_pixel1" class="pixel"></div>
+                            <div id="digit13_column2_pixel2" class="pixel"></div>
+                            <div id="digit13_column2_pixel3" class="pixel"></div>
+                            <div id="digit13_column2_pixel4" class="pixel"></div>
+                            <div id="digit13_column2_pixel5" class="pixel"></div>
+                            <div id="digit13_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit13_column3" class="digit_column">
+                            <div id="digit13_column3_pixel0" class="pixel"></div>
+                            <div id="digit13_column3_pixel1" class="pixel"></div>
+                            <div id="digit13_column3_pixel2" class="pixel"></div>
+                            <div id="digit13_column3_pixel3" class="pixel"></div>
+                            <div id="digit13_column3_pixel4" class="pixel"></div>
+                            <div id="digit13_column3_pixel5" class="pixel"></div>
+                            <div id="digit13_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit13_column4" class="digit_column">
+                            <div id="digit13_column4_pixel0" class="pixel"></div>
+                            <div id="digit13_column4_pixel1" class="pixel"></div>
+                            <div id="digit13_column4_pixel2" class="pixel"></div>
+                            <div id="digit13_column4_pixel3" class="pixel"></div>
+                            <div id="digit13_column4_pixel4" class="pixel"></div>
+                            <div id="digit13_column4_pixel5" class="pixel"></div>
+                            <div id="digit13_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit14" class="digit">
+                        <div id="digit14_column0" class="digit_column">
+                            <div id="digit14_column0_pixel0" class="pixel"></div>
+                            <div id="digit14_column0_pixel1" class="pixel"></div>
+                            <div id="digit14_column0_pixel2" class="pixel"></div>
+                            <div id="digit14_column0_pixel3" class="pixel"></div>
+                            <div id="digit14_column0_pixel4" class="pixel"></div>
+                            <div id="digit14_column0_pixel5" class="pixel"></div>
+                            <div id="digit14_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit14_column1" class="digit_column">
+                            <div id="digit14_column1_pixel0" class="pixel"></div>
+                            <div id="digit14_column1_pixel1" class="pixel"></div>
+                            <div id="digit14_column1_pixel2" class="pixel"></div>
+                            <div id="digit14_column1_pixel3" class="pixel"></div>
+                            <div id="digit14_column1_pixel4" class="pixel"></div>
+                            <div id="digit14_column1_pixel5" class="pixel"></div>
+                            <div id="digit14_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit14_column2" class="digit_column">
+                            <div id="digit14_column2_pixel0" class="pixel"></div>
+                            <div id="digit14_column2_pixel1" class="pixel"></div>
+                            <div id="digit14_column2_pixel2" class="pixel"></div>
+                            <div id="digit14_column2_pixel3" class="pixel"></div>
+                            <div id="digit14_column2_pixel4" class="pixel"></div>
+                            <div id="digit14_column2_pixel5" class="pixel"></div>
+                            <div id="digit14_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit14_column3" class="digit_column">
+                            <div id="digit14_column3_pixel0" class="pixel"></div>
+                            <div id="digit14_column3_pixel1" class="pixel"></div>
+                            <div id="digit14_column3_pixel2" class="pixel"></div>
+                            <div id="digit14_column3_pixel3" class="pixel"></div>
+                            <div id="digit14_column3_pixel4" class="pixel"></div>
+                            <div id="digit14_column3_pixel5" class="pixel"></div>
+                            <div id="digit14_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit14_column4" class="digit_column">
+                            <div id="digit14_column4_pixel0" class="pixel"></div>
+                            <div id="digit14_column4_pixel1" class="pixel"></div>
+                            <div id="digit14_column4_pixel2" class="pixel"></div>
+                            <div id="digit14_column4_pixel3" class="pixel"></div>
+                            <div id="digit14_column4_pixel4" class="pixel"></div>
+                            <div id="digit14_column4_pixel5" class="pixel"></div>
+                            <div id="digit14_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+                    <div id="digit15" class="digit">
+                        <div id="digit15_column0" class="digit_column">
+                            <div id="digit15_column0_pixel0" class="pixel"></div>
+                            <div id="digit15_column0_pixel1" class="pixel"></div>
+                            <div id="digit15_column0_pixel2" class="pixel"></div>
+                            <div id="digit15_column0_pixel3" class="pixel"></div>
+                            <div id="digit15_column0_pixel4" class="pixel"></div>
+                            <div id="digit15_column0_pixel5" class="pixel"></div>
+                            <div id="digit15_column0_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit15_column1" class="digit_column">
+                            <div id="digit15_column1_pixel0" class="pixel"></div>
+                            <div id="digit15_column1_pixel1" class="pixel"></div>
+                            <div id="digit15_column1_pixel2" class="pixel"></div>
+                            <div id="digit15_column1_pixel3" class="pixel"></div>
+                            <div id="digit15_column1_pixel4" class="pixel"></div>
+                            <div id="digit15_column1_pixel5" class="pixel"></div>
+                            <div id="digit15_column1_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit15_column2" class="digit_column">
+                            <div id="digit15_column2_pixel0" class="pixel"></div>
+                            <div id="digit15_column2_pixel1" class="pixel"></div>
+                            <div id="digit15_column2_pixel2" class="pixel"></div>
+                            <div id="digit15_column2_pixel3" class="pixel"></div>
+                            <div id="digit15_column2_pixel4" class="pixel"></div>
+                            <div id="digit15_column2_pixel5" class="pixel"></div>
+                            <div id="digit15_column2_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit15_column3" class="digit_column">
+                            <div id="digit15_column3_pixel0" class="pixel"></div>
+                            <div id="digit15_column3_pixel1" class="pixel"></div>
+                            <div id="digit15_column3_pixel2" class="pixel"></div>
+                            <div id="digit15_column3_pixel3" class="pixel"></div>
+                            <div id="digit15_column3_pixel4" class="pixel"></div>
+                            <div id="digit15_column3_pixel5" class="pixel"></div>
+                            <div id="digit15_column3_pixel6" class="pixel"></div>
+                        </div>
+                        <div id="digit15_column4" class="digit_column">
+                            <div id="digit15_column4_pixel0" class="pixel"></div>
+                            <div id="digit15_column4_pixel1" class="pixel"></div>
+                            <div id="digit15_column4_pixel2" class="pixel"></div>
+                            <div id="digit15_column4_pixel3" class="pixel"></div>
+                            <div id="digit15_column4_pixel4" class="pixel"></div>
+                            <div id="digit15_column4_pixel5" class="pixel"></div>
+                            <div id="digit15_column4_pixel6" class="pixel"></div>
+                        </div>
+                    </div>
+            </div>
+            <div id ="keypad">
+                <ol>
+                    <li><button id='leftParen'>(</button></li>
+                    <li><button id='rightParen'>)</button></li>
+                    <li><button id='clear'>C</button></li>
+                    <li><button id='ans'>ANS</button></li>
+                </ol>
+                <ol>
+                    <li><button id='seven'>7</button></li>
+                    <li><button id='eight'>8</button></li>
+                    <li><button id='nine'>9</button></li>
+                    <li><button id='divide'>/</button></li>
+                </ol>
+                <ol>
+                    <li><button id='four'>4</button></li>
+                    <li><button id='five'>5</button></li>
+                    <li><button id='six'>6</button></li>
+                    <li><button id='multiply'>*</button></li>
+                </ol>
+                <ol>
+                    <li><button id='one'>1</button></li>
+                    <li><button id='two'>2</button></li>
+                    <li><button id='three'>3</button></li>
+                    <li><button id='subtract'>-</button></li>
+                </ol>
+                <ol>
+                    <li><button id='zero'>0</button></li>
+                    <li><button id='decimal'>.</button></li>
+                    <li><div class='equals_button'><button id='equals'>=</button></div></li>
+                    <li><button id='plus'>+</button></li>
+                </ol>
+            </div>
+        </div>
+        <script src='app.js'></script>
+    </body>                                                                          
+</html>
