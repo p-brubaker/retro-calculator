@@ -8,6 +8,7 @@ body {
   color: #484848;
   font-family: 'Lato', sans-serif;
   display: flex;
+  background-color: tan;
 }
 h1 {
   margin-bottom: 0;
